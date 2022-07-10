@@ -1,6 +1,7 @@
 .modern__header{
     display: flex;
     flex-direction: row;
+    
 
 }
 
@@ -11,6 +12,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-right: 5rem;
+    z-index: 2;
 }
 
 .modern__header-content h1 {
@@ -19,6 +21,7 @@
     font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04rem;
+    z-index: 2;
 }
 
 .modern__header-content p {
@@ -29,6 +32,7 @@
     color: var(--color-text);
     
     margin-top: 1.5rem;
+    z-index: 2;
 }
 
 .modern__header-content__input{
@@ -97,6 +101,7 @@
 .modern__header-content__people img {
     width: 182px;
     height: 38px;
+    
 }
 .modern__header-content__people p {
 
@@ -122,6 +127,7 @@
 .modern__header-image img {
     width: 100%;
     height: 100%;
+    z-index: 2;
 }
 
 
