@@ -31,7 +31,7 @@ const particle = () => {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: "bubble",
             },
             onHover: {
               enable: true,
@@ -70,7 +70,7 @@ const particle = () => {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -81,13 +81,13 @@ const particle = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.3,
           },
           shape: {
-            type: "circle",
+            type: "plyogon",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 3 },
           },
         },
         detectRetina: true,

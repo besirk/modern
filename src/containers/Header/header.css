@@ -1,6 +1,7 @@
 .modern__header{
     display: flex;
     flex-direction: row;
+    position: relative;
     
 
 }
@@ -12,7 +13,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-right: 5rem;
-    z-index: 2;
+    z-index: 1;
 }
 
 .modern__header-content h1 {
@@ -21,7 +22,7 @@
     font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04rem;
-    z-index: 2;
+    z-index: 1;
 }
 
 .modern__header-content p {
