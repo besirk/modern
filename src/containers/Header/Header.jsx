@@ -1,43 +1,29 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import './header.css';
-
-
-import Typical from 'react-typical'
-import {Canvas} from '@react-three/fiber';
-import World from '../../components/World';
-import { OrbitControls } from '@react-three/drei';
-
-
-
+import people from '../../assets/people.png';
+import ai from '../../assets/ai.png';
+import Particle from '../../components/particle';
 const Header = () => {
   return (
     <>
   
     <div className='modern__header section__padding ' id='home'>
-     
+    <Particle />
       <div className='modern__header-content'>
-        
-        <h1 className='gradient__text'> <Typical
-        steps={['Hi, I am Besir Kurtishi', 3000, 'I\'m a Frontend Developer.', 1000, 'I also Like animations.', 1000, 'And I also like ThreeJs', 1000]}
-        loop={Infinity}
-        wrapper="h1"
-      /> </h1>
-        <p>I'm a Frontend Software Developer with a strong passion for building web applications with great user experiences</p>
-        
-        
+        <h1 className='gradient__text'>Explore our new powerful AI</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, inventore debitis? Odit perspiciatis sequi maiores molestias saepe ab doloremque blanditiis est nisi tempore. Aperiam magni vel vero explicabo possimus ipsam.</p>
+        <div className='modern__header-content__input'>
+          <input type="email" placeholder='Your email address' />
+          <button type='button'>Get Started</button>
+        </div>
+        <div className='modern__header-content__people'>
+          <img src={people} alt="people" />
+          <p>2000 people requested access</p>
+        </div>
       </div>  
-      
-          <Canvas className='modern__header-image'>
-          <OrbitControls enableZoom={false} panSpeed={2} />
-          
-          <ambientLight intensity={0.5}/>
-          <directionalLight position={[-2,5,2]} intensity={1} />
-          <Suspense fallback={null} >
-          <World />
-          </Suspense>
-         
-          </Canvas>
-      
+      <div className='modern__header-image'>
+          <img src={ai} alt="ai" />
+      </div>
     </div>
 
     </>

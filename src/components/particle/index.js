@@ -21,117 +21,83 @@ const particle = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-  
-  "fullScreen": {
-    "enable" : false
-  },
-  "interactivity": {
-    "events": {
-      "onClick": {
-        "enable": true,
-        "mode": "bubble"
-      },
-      
-      "onHover": {
-        "enable": true,
-        "mode": "bubble",
         
-      }
-    },
-    
-  },
-  "particles": {
-    "color": {
-      "value": "#ffffff"
-    },
-    "links": {
-      "color": {
-        "value": "#000"
-      },
-      "distance": 150,
-      "opacity": 0.4
-    },
-    "move": {
-      "attract": {
-        "rotate": {
-          "x": 600,
-          "y": 1200
-        }
-      },
-      "enable": true,
-      "outModes": {
-        "bottom": "out",
-        "left": "out",
-        "right": "out",
-        "top": "out"
-      }
-    },
-    "number": {
-      "density": {
-        "enable": true
-      },
-      "value": 100
-    },
-    "opacity": {
-      "random": {
-        "enable": true
-      },
-      "value": {
-        "min": 0.1,
-        "max": 1
-      },
-      "animation": {
-        "enable": true,
-        "speed": 1,
-        "minimumValue": 0.2
-      }
-    },
-    "rotate": {
-      "random": {
-        "enable": true
-      },
-      "animation": {
-        "enable": true,
-        "speed": 5
-      },
-      "direction": "random"
-    },
-    "shape": {
-      "options": {
-        
-       
-        "image": [
-          {
+        background: {
+            size: "10px",
             
-            "src": "https://img.icons8.com/office/16/000000/react.png",
-           
+        },
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "bubble",
+            },
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
+            resize: true,
           },
-          {
-            "src": "https://img.icons8.com/color/48/000000/html-5--v1.png",
+          modes: {
+            push: {
+              quantity: 4,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
           },
-          {
-            "src": "https://img.icons8.com/color/48/000000/css3.png",
+        },
+        particles: {
+          color: {
+            value: "#ffffff",
           },
-          {
-            "src": "https://img.icons8.com/color/48/000000/javascript--v1.png",
+          links: {
+            color: "#ffffff",
+            distance: 150,
+            enable: true,
+            opacity: 0.4,
+            width: 1,
           },
-          
-        ],
-        
-      },
-      "type": "image",
-      
-    },
-    "size": {
-      "value": 12,
-      "animation": {
-        "speed": 40,
-        "minimumValue": 0.1
-      }
-    },
-    
-  }
-}}
+          collisions: {
+            enable: true,
+          },
+          move: {
+            direction: "none",
+            enable: true,
+            outModes: {
+              default: "bounce",
+            },
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          number: {
+            density: {
+              enable: true,
+              area: 800,
+            },
+            value: 80,
+          },
+          opacity: {
+            value: 0.3,
+          },
+          shape: {
+            type: "plyogon",
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
+        },
+        detectRetina: true,
+        fullScreen: {
+            enable: false,
+            zIndex:0,
+            
+        },
+       
+      }}
     />
   );
 };

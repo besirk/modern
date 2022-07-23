@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 100vh;
-    width: 100%;
     
 
 }
@@ -17,22 +15,13 @@
     margin-right: 5rem;
     z-index: 1;
 }
-.modern__header-content h3 {
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 75px;
-    letter-spacing: -0.04rem;
-    z-index: 1;
-    color: #40c9ff;
-}
+
 .modern__header-content h1 {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 45px;
+    font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04rem;
-    
     z-index: 1;
 }
 
@@ -133,11 +122,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     
 }
 
-
+.modern__header-image img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
 
 
 @media screen  and (max-width:1050px){
