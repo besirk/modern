@@ -18,18 +18,15 @@ const Navbar = () => {
 
   return (
     <div className="modern__navbar">
-      <div className="modern__navbar-links">
+      
         <div className="modern__navbar-links_logo">
           <img src={logo} alt="logo" />
         </div>
         <div className="modern__navbar-links_container">
           <Menu />
         </div>
-      </div>
-      <div className="modern__navbar-sign">
-        <p>Sign in</p>
-        <button type="button">Sign Up</button>
-      </div>
+      
+     
       <div className="modern__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -48,10 +45,6 @@ const Navbar = () => {
           <div className="modern__navbar-menu_container scale-up-center">
             <div className="modern__navbar-menu_container-links">
               <Menu />
-              <div className="modern__navbar-menu_container-links-sign">
-                <p>Sign in</p>
-                <button type="button">Sign Up</button>
-              </div>
             </div>
           </div>
         )}

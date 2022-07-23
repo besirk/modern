@@ -1,5 +1,8 @@
 .modern__brand{
-
+   
+    position: relative;
+    height: 250px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -9,10 +12,36 @@
 }
 .modern__brand div {
     flex: 1;
-    max-width: 150px;
-    min-width: 120px;
+    width: 100%;
     margin: 1rem;
 
     display: flex;
     justify-content: center;
+}
+.modern__brand h1 {
+    color: #fff;
+    font-weight: 700;
+    font-family: var(--font-family);
+    font-size: 50px;
+    z-index: 999;
+}
+.modern__brand-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modern__brand-content ul  {
+    display: flex;
+    flex-direction: row;
+    
+    color: rgb(206, 202, 202);
+}
+.modern__brand-content ul li {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 10;
+    font-family: var(--font-family);
+    list-style-type: none;
 }
